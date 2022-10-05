@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="99dp"
+        android:layout_height="95dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="50dp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ferret_icon" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/ProjectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ferret - Projetos idepententes"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="134dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Criado por:"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <TextView
+        android:id="@+id/Criador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ItbBelval"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="173dp" />
+
+    <TextView
+        android:id="@+id/Descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição: O ferret, férret, chame como quiser, é um projeto criado por um grupos de alunos do INF2FM no itb belval, é um site e aplicativo com a ideia de conectar atráves de projetos postados e workspasces de trabalho para concetar pequenos ártistas, programadores, músicos, designers entre outros não profissionais para aumentar o número de projetos idepentendes no Brasil."
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <View
+        android:id="@+id/backuparea"
+        android:layout_width="419dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="72dp"
+        android:background="@color/purple_200"
+        android:outlineAmbientShadowColor="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@+id/Descricao"
+        tools:layout_editor_absoluteX="-2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Backup"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <TextView
+        android:id="@+id/git"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Github.com"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="478dp" />
+
+    <TextView
+        android:id="@+id/dropbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dropbox.com"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/drive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Googledrive.com"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="713dp">
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip5"
+        android:layout_width="445dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-6dp" />
+
+
+    <ImageView
+        android:id="@+id/chat"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/chat"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="679dp" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="51dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/home"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="666dp" />
+
+    <ImageView
+        android:id="@+id/userperfil"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/userphoto"
+        tools:layout_editor_absoluteX="342dp"
+        tools:layout_editor_absoluteY="680dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
